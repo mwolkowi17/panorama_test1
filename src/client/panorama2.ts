@@ -17,7 +17,7 @@ import { infoicon1 } from './panorama1';
 // const texture = new THREE.TextureLoader().load('./kawiarnia3.png');
 // const material = new THREE.MeshBasicMaterial({ map: texture });
 
-export const panorama2 = new panorama_form('./test5_next3.png').main
+export const panorama2 = new panorama_form('./test7_next.png').main
 
 export const navicon2 = new create_icon(20, -13, -30,'nav2');
 export const navicon3 = new create_icon(-7, -13, 40,'nav3');

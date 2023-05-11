@@ -9,7 +9,7 @@ import { panorama_form } from './panorama_create';
 
 export const panorama1 = new panorama_form('./test7.png').main;
 
-export const navicon1 = new create_icon(-12, -18, -30,'nav1');
+export const navicon1 = new create_icon(-0, -18, -30,'nav1');
 
 
 setTimeout(() => {
@@ -30,9 +30,9 @@ navicon1.element.addEventListener('pointerdown', () => {
 
 export  const infoicon1 = new create_info_icon(-30, 0, 30,'imageInfo1')
 
-setTimeout(() => {
-    panorama1.add(infoicon1.main);
-  }, 1000)
+// setTimeout(() => {
+//     panorama1.add(infoicon1.main);
+//   }, 1000)
 
 
 infoicon1.element.addEventListener('pointerdown',()=>{

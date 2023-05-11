@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { create_icon } from './navigation_icon';
+import { create_icon_left } from './navigation_icon_left';
 import { scene } from './client';
 import { panorama2,navicon2,navicon3 } from './panorama2';
 import { panorama_form } from './panorama_create';
@@ -13,7 +14,7 @@ import { panorama_form } from './panorama_create';
 
 export const panorama3 = new panorama_form('./test7_next_b.png').main;
 
-export const navicon4 = new create_icon(14, -18, 30,'nav4');
+export const navicon4 = new create_icon_left(20,-18,0,'nav4');
 
 panorama3.add(navicon4.main)
 
@@ -25,7 +26,5 @@ navicon4.element.addEventListener('pointerdown', () => {
     panorama2.add(navicon2.main);
     panorama2.add(navicon3.main);
     navicon4.reset_size();
-    
-
 })
 

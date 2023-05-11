@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { create_icon } from './navigation_icon';
+import { create_icon_left } from './navigation_icon_left';
 import { scene } from './client';
 import { panorama1,navicon1 } from './panorama1';
 import { panorama3,navicon4 } from './panorama3';
@@ -19,27 +20,14 @@ import { infoicon1 } from './panorama1';
 
 export const panorama2 = new panorama_form('./test7_next.png').main
 
-export const navicon2 = new create_icon(20, -13, -30,'nav2');
-export const navicon3 = new create_icon(-7, -13, 40,'nav3');
+export const navicon2 = new create_icon_left(-35, 4, -3,'nav2');
+export const navicon3 = new create_icon(0, -13, 40,'nav3');
 
 panorama2.add(navicon2.main);
 panorama2.add(navicon3.main);
 
 navicon2.element.addEventListener('pointerdown', () => {
-    panorama2.remove(navicon2.main);
-    panorama2.remove(navicon3.main);
-    scene.remove(panorama2);
-    //navicon2.element.style.visibility = 'hidden';
-    //navicon3.element.style.visibility = 'hidden';
-    scene.add(panorama1);
-    panorama1.add(navicon1.main)
-    panorama1.add(infoicon1.main)
-    navicon2.reset_size();
-    navicon3.reset_size();
-
-})
-
-navicon3.element.addEventListener('pointerdown', () => {
+    console.log('navicon2')
     panorama2.remove(navicon2.main);
     panorama2.remove(navicon3.main);
     scene.remove(panorama2);
@@ -49,6 +37,21 @@ navicon3.element.addEventListener('pointerdown', () => {
     panorama3.add(navicon4.main);
     navicon2.reset_size();
     navicon3.reset_size();
+})
+
+navicon3.element.addEventListener('pointerdown', () => {
+    console.log("navicon3")
+    panorama2.remove(navicon2.main);
+    panorama2.remove(navicon3.main);
+    scene.remove(panorama2);
+    //navicon2.element.style.visibility = 'hidden';
+    //navicon3.element.style.visibility = 'hidden';
+    scene.add(panorama1);
+    panorama1.add(navicon1.main)
+    //panorama1.add(infoicon1.main)
+    navicon2.reset_size();
+    navicon3.reset_size();
+
 
 })
 

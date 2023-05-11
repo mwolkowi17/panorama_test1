@@ -7,7 +7,7 @@ import { scene } from './client';
 import { panorama_form } from './panorama_create';
 
 
-export const panorama1 = new panorama_form('./test7.png').main;
+export const panorama1 = new panorama_form('./test8.png').main;
 
 export const navicon1 = new create_icon(-0, -18, -30,'nav1');
 

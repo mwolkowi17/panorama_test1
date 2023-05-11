@@ -12,7 +12,7 @@ import { panorama_form } from './panorama_create';
 // const texture = new THREE.TextureLoader().load('./kawiarnia4.png');
 // const material = new THREE.MeshBasicMaterial({ map: texture });
 
-export const panorama3 = new panorama_form('./test7_next_b.png').main;
+export const panorama3 = new panorama_form('./test8_next_b.png').main;
 
 export const navicon4 = new create_icon_left(20,-18,0,'nav4');
 

@@ -40,7 +40,7 @@ panorama3.add(infoicon4.main)
 
 infoicon4.element.addEventListener('pointerdown', () => {
     console.log('pointer clicked');
-    const infodiv4 = new invoDiv('./picture2.png');
+    const infodiv4 = new invoDiv('./picture2_roslinnosc.png');
     document.body.appendChild(infodiv4.main)
     infodiv4.main.style.visibility = 'visible';
     infoicon4.element.style.visibility = 'hidden';

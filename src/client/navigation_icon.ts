@@ -11,7 +11,7 @@ export class create_icon {
         this.element = document.createElement('img');
         this.element.className = 'imagenav';
         this.element.id = id;
-        this.element.src = './pap_circle_up.png'
+        this.element.src = './pap_circle_up_yellow.png'
         this.element.height = 5;
         this.element.width = 5;
         this.element.style.visibility = 'visible';

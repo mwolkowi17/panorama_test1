@@ -10,7 +10,7 @@ export class create_info_icon{
         this.element = document.createElement('img');
         this.element.className = 'infonav';
         this.element.id = id;
-        this.element.src = './pap_spot_white.png'
+        this.element.src = './pap_spot_yellow.png'
         this.element.height = 5;
         this.element.width = 5;
         this.element.style.visibility = 'visible';

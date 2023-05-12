@@ -16,7 +16,7 @@ export class invoDiv {
         this.main.className = 'display';
         this.main.id = 'display1';
         this.main.style.backgroundColor = 'rgba(255,255,255,0.5)';
-        this.main.textContent = "Stairs in the park";
+        this.main.textContent = "Zniszczenia";
         this.main.style.color = 'black'
         this.main.style.height = "480px";
         this.main.style.width = "700px";

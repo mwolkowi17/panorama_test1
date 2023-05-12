@@ -5,7 +5,7 @@ import { invoDiv } from './info_div';
 import { panorama2,navicon2,navicon3 } from './panorama2';
 import { scene } from './client';
 import { panorama_form } from './panorama_create';
-import { infoicon2 } from './panorama2';
+import { infoicon2,infoicon3 } from './panorama2';
 
 //dodawanie panoramy
 export const panorama1 = new panorama_form('./test8.png').main;
@@ -26,6 +26,8 @@ navicon1.element.addEventListener('pointerdown', () => {
     panorama2.add(navicon3.main);
     navicon1.reset_size();
     panorama2.add(infoicon2.main)
+    panorama2.add(infoicon3.main)
+   
 
 })
 

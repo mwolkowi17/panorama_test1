@@ -26,7 +26,7 @@ document.body.appendChild( labelRenderer.domElement );
 
 const controls = new OrbitControls(camera, labelRenderer.domElement)
 controls.enableDamping=true;
-controls.enableZoom=true;
+controls.enableZoom=false;
 
 scene.add(panorama1)
 

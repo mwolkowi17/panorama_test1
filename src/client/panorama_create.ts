@@ -1,5 +1,7 @@
 import * as THREE from 'three';
 
+
+//klasa tworząca mesh panoramy
 export class panorama_form {
 
     main:THREE.Mesh

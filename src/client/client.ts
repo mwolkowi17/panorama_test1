@@ -3,9 +3,10 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { CSS3DRenderer } from 'three/examples/jsm/renderers/CSS3DRenderer.js';
 import {panorama1} from './panorama1'
 
-
+//scena
 export const scene = new THREE.Scene()
 
+//camera
 const camera = new THREE.PerspectiveCamera(
     75,
     window.innerWidth / window.innerHeight,
@@ -14,20 +15,24 @@ const camera = new THREE.PerspectiveCamera(
 )
 camera.position.z = 2
 
+//renderer
 const renderer = new THREE.WebGLRenderer()
 renderer.setSize(window.innerWidth, window.innerHeight)
 document.body.appendChild(renderer.domElement)
 
+//label_renderer
 const labelRenderer = new CSS3DRenderer();
 labelRenderer.setSize(window.innerWidth, window.innerHeight);
 labelRenderer.domElement.style.position = 'absolute';
 labelRenderer.domElement.style.top = '0px';
 document.body.appendChild( labelRenderer.domElement );
 
+//controls
 const controls = new OrbitControls(camera, labelRenderer.domElement)
 controls.enableDamping=true;
 controls.enableZoom=false;
 
+//dodawanie panoramy
 scene.add(panorama1)
 
 window.addEventListener('resize', onWindowResize, false)
@@ -38,6 +43,7 @@ function onWindowResize() {
     render()
 }
 
+//animate
 function animate() {
     requestAnimationFrame(animate)
 

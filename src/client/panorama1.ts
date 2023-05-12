@@ -1,7 +1,4 @@
-import * as THREE from 'three';
 import { create_icon } from './navigation_icon';
-import { create_info_icon } from './info_icon';
-import { invoDiv } from './info_div';
 import { panorama2,navicon2,navicon3 } from './panorama2';
 import { scene } from './client';
 import { panorama_form } from './panorama_create';
@@ -20,7 +17,6 @@ setTimeout(() => {
 navicon1.element.addEventListener('pointerdown', () => {
     panorama1.remove(navicon1.main)
     scene.remove(panorama1);
-    //navicon1.element.style.visibility = 'hidden';
     scene.add(panorama2);
     panorama2.add(navicon2.main);
     panorama2.add(navicon3.main);

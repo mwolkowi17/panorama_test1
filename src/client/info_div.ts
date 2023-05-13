@@ -28,8 +28,9 @@ export class invoDiv {
         this.offButton = document.createElement('div')
         this.offButton.className = 'offButton'
         this.offButton.style.cursor='pointer'
-        this.offButton.style.color='green'
-        this.offButton.textContent = '[close details]'
+        this.offButton.style.color='black'
+        this.offButton.style.fontWeight='bold'
+        this.offButton.textContent = '[Zamknij]'
 
         this.image1 = document.createElement('img')
         this.image1.id = 'picture_1'

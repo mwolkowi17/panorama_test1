@@ -7,7 +7,7 @@ import { create_info_icon } from './info_icon';
 import { invoDiv } from './info_div';
 
 //dodawanie panoramy
-export const panorama3 = new panorama_form('./test8_next_b.png').main;
+export const panorama3 = new panorama_form('./test9_next_b.png').main;
 
 //dodawanie ikony nawigacyjnej
 export const navicon4 = new create_icon_left(20,-18,0,'nav4');

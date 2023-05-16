@@ -5,7 +5,7 @@ import { panorama_form } from './panorama_create';
 import { infoicon2,infoicon3 } from './panorama2';
 
 //dodawanie panoramy
-export const panorama1 = new panorama_form('./test8.png').main;
+export const panorama1 = new panorama_form('./test9.png').main;
 
 //dodawanie ikony nawigacyjnej
 export const navicon1 = new create_icon(-0, -18, -30,'nav1');
